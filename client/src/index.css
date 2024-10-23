@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bgimg {
+  background-image: url("/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.glass-bg {
+  transition: all 0.3s ease;
+  &&:hover {
+    transform: scale(1.02);
+  }
+}
+.sign-up-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &&:hover {
+    background: linear-gradient(90deg, #f59e0b, #d97706);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }
+}
+.dark {
+  background-image: url("/land-d.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.dark-mode {
+  color: white;
+  &&:hover {
+    transform: scale(1.02);
+    border-bottom: 2px solid white;
+  }
+}
+.dm-sin {
+  color: white;
+  &&:hover {
+    transform: scale(1.02);
+    border-bottom: 2px solid white;
+  }
+}
